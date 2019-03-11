@@ -11,6 +11,8 @@
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import './shared-styles.js';
 
+import './components/asunto-list.js';
+
 class MyView1 extends PolymerElement {
   static get template() {
     return html`
@@ -27,6 +29,8 @@ class MyView1 extends PolymerElement {
         <p>Tu opinión cuenta. Si quieres hacer aportaciones y sugerencias sobre los servicios y actividades del ayuntamiento, si en tu calle hay baldosas sueltas o farolas que no funcionan, si no encuentras en la web municipal la información que necesitas ... puedes utilizar el buzón ciudadano para hacer tu aportación, plantear tu queja o duda al Ayuntamiento.</p>
         <p>A través del buzón puedes consultar lo que el Ayuntamiento responda, leer los comentarios de otras personas y seguir los asuntos que hayas planteado.</p>
       </div>
+
+      <asunto-list tema="1"></asunto-list>
     `;
   }
 }
